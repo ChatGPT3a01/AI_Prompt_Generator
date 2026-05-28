@@ -653,7 +653,7 @@ CORS(app, resources={<span style="color: #fbbf24">r"/api/*"</span>: {<span style
                             </div>
                             <h3 class="text-xl font-bold text-green-800 mb-3">OpenAI GPT</h3>
                             <ul class="text-green-700 space-y-2 text-sm">
-                                <li><i class="fas fa-check"></i> GPT-4 強大能力</li>
+                                <li><i class="fas fa-check"></i> GPT-5.5 強大能力</li>
                                 <li><i class="fas fa-check"></i> 高品質輸出</li>
                                 <li><i class="fas fa-check"></i> 豐富 API 功能</li>
                                 <li><i class="fas fa-dollar-sign"></i> 按使用量計費</li>
@@ -739,7 +739,7 @@ logger = logging.getLogger(__name__)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #94a3b8"># 初始化 Gemini</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #38bdf8">if</span> config.GOOGLE_AI_API_KEY:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;genai.configure(api_key=config.GOOGLE_AI_API_KEY)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a78bfa">self</span>.gemini_model = genai.GenerativeModel(<span style="color: #fbbf24">'gemini-2.0-flash-exp'</span>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a78bfa">self</span>.gemini_model = genai.GenerativeModel(<span style="color: #fbbf24">'gemini-3.5-flash'</span>)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger.info(<span style="color: #fbbf24">"Gemini 服務已初始化"</span>)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #38bdf8">def</span> <span style="color: #fbbf24">generate_prompt</span>(<span style="color: #a78bfa">self</span>, requirements, provider=<span style="color: #10b981">None</span>):<br>

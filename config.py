@@ -35,12 +35,12 @@ class Config:
 
     # AI 服務配置
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-    OPENAI_MODEL = os.getenv('OPENAI_MODEL', 'gpt-4')
+    OPENAI_MODEL = os.getenv('OPENAI_MODEL', 'gpt-5.5')
     OPENAI_EMBEDDING_MODEL = os.getenv('OPENAI_EMBEDDING_MODEL', 'text-embedding-3-small')
 
     GOOGLE_AI_API_KEY = os.getenv('GOOGLE_AI_API_KEY')
-    GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-2.5-flash')
-    GEMINI_PRO_MODEL = os.getenv('GEMINI_PRO_MODEL', 'gemini-2.5-pro')
+    GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-3.5-flash')
+    GEMINI_PRO_MODEL = os.getenv('GEMINI_PRO_MODEL', 'gemini-3.5-pro')
 
     AI_PROVIDER = os.getenv('AI_PROVIDER', 'both')  # openai, gemini, both
     DEFAULT_AI_PROVIDER = os.getenv('DEFAULT_AI_PROVIDER', 'gemini')
