@@ -95,7 +95,7 @@ PROJECT_TYPES = {
                 <p>以整合 Anthropic Claude 為例：</p>
                 <pre><code># 1. 在 config.py 添加配置
 ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY')
-CLAUDE_MODEL = os.getenv('CLAUDE_MODEL', 'claude-3-opus-20240229')
+CLAUDE_MODEL = os.getenv('CLAUDE_MODEL', 'claude-opus-4-8')
 
 # 2. 在 AIService 初始化 Anthropic 客戶端
 if config.ANTHROPIC_API_KEY:
